@@ -1,0 +1,30 @@
+Input pl/0 file?   y
+0 floating result;
+
+1 floatlist a(3);
+
+1 begin;
+
+2     a(0):=1.1;
+
+4     a(1):=2.2;
+
+6     a(2):=3.3;
+
+8     result:=sum(a(3));
+
+14     write(result);
+
+17     result:=avg(a(3));
+
+25     write(result);
+
+28     result:=max(a(3));
+
+34     write(result);
+
+37     result:=min(a(3));
+
+43     write(result);
+
+46 end.

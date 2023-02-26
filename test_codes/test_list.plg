@@ -1,0 +1,16 @@
+var a;
+floating b;
+intlist c(3);
+floatlist d(4);
+begin;
+    c(0) := 1;
+    c(2) := 2;
+    a := c(0)+c(2);
+    write(a);
+    d(0) := 1.1;
+    d(3) := 2.2;
+    b := d(0)-d(3);
+    write(b);
+    write(c(2));
+    write(d(0));
+end.

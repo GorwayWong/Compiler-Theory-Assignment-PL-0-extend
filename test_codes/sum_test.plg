@@ -1,0 +1,15 @@
+floating result;
+floatlist a(3);
+begin;
+    a(0):=1.1;
+    a(1):=2.2;
+    a(2):=3.3;
+    result:=sum(a(3));
+    write(result);
+    result:=avg(a(3));
+    write(result);
+    result:=max(a(3));
+    write(result);
+    result:=min(a(3));
+    write(result);
+end.

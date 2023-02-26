@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "lesonPL0",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},{
+			"include":"#comments"
+		},{
+			"include":"#variables"
+		},{
+			"include":"#staments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pl/0-G-Version",
+				"match": "\\b(if|while|for|return)\\b"
+			},
+			{
+				"name": "support.function.pl/0-G-Version",
+				"match":"\\b(write|read|printf|scanf|sum|avg|max|min)\\b"
+			},
+			{
+				"name":"keyword.pl/0-G-Version",
+				"match":"\\b(begin|end|procedure)\\b"
+			},
+			{
+				"name":"support.type.pl/0-G-Version",
+				"match":"\\b(var|floating|intlist|floatlist)\\b"
+			},
+			{
+				"name":"variable.name.pl/0-G-Version",
+				"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+			}
+		]
+		},
+		"statements": {
+			"match": "\\b(procedure)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(([A-Za-z0-9,\\s]*)\\)",
+			"captures": {
+				"1": {
+					"name": "storage.type.function.pl/0-G-Version"
+				},
+				"2": {
+					"name": "entity.name.function.pl/0-G-Version"
+				},
+				"3": {
+					"patterns": [
+						{
+							"match": "\\b(write|read|printf|scanf)*\\b",
+							"name": "keyword.operator.pl/0-G-Version"
+						}
+					]
+				},
+				"4": {
+					"patterns": [
+						{
+							"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b",
+							"name": "variable.parameter.pl/0-G-Version"
+						}
+					]
+				}
+			}
+		},
+		"strings": {
+			"name": "string.quoted.double.pl/0-G-Version",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pl/0-G-Version",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.plg"
+}

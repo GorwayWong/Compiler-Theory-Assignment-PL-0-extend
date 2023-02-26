@@ -1,0 +1,101 @@
+{
+    "read": {
+        "prefix": "read",
+        "body": [
+            "read(${1})"
+        ],
+        "description": "read函数"
+    },
+    "write": {
+        "prefix": "write",
+        "body": [
+            "write(${1})"
+        ],
+        "description": "write函数"
+    },
+    "sum": {
+        "prefix": "sum",
+        "body": [
+            "sum(${1})"
+        ],
+        "description": "sum函数"
+    },
+    "min": {
+        "prefix": "min",
+        "body": [
+            "min(${1})"
+        ],
+        "description": "min函数"
+    },
+    "avg": {
+        "prefix": "avg",
+        "body": [
+            "avg(${1})"
+        ],
+        "description": "avg函数"
+    },
+    "max": {
+        "prefix": "max",
+        "body": [
+            "max(${1})"
+        ],
+        "description": "max函数"
+    },
+    "begin": {
+        "prefix": "begin",
+        "body": [
+            "begin;",
+            "    ${1}"
+        ],
+        "description": "begin"
+    },
+    "end": {
+        "prefix": "end",
+        "body": [
+            "end."
+        ],
+        "description": "end"
+    },
+    "scanf": {
+        "prefix": "scanf",
+        "body": [
+            "scanf(${1})"
+        ],
+        "description": "scanf函数"
+    },
+    "printf": {
+        "prefix": "printf",
+        "body": [
+            "printf(${1})"
+        ],
+        "description": "printf函数"
+    },
+    "var": {
+        "prefix": "var",
+        "body": [
+            "var ${1}"
+        ],
+        "description": "整型变量声明"
+    },
+    "floating": {
+        "prefix": "floating",
+        "body": [
+            "floating ${1}"
+        ],
+        "description": "浮点型变量声明"
+    },
+    "intlist": {
+        "prefix": "intlist",
+        "body": [
+            "intlist ${1}"
+        ],
+        "description": "整型数组声明"
+    },
+    "floatlist": {
+        "prefix": "floatlist",
+        "body": [
+            "floatlist ${1}"
+        ],
+        "description": "浮点型数组声明"
+    }
+}

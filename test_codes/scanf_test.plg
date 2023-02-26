@@ -1,0 +1,14 @@
+var a;
+floating b;
+intlist c(3);
+floatlist d(3);
+begin;
+scanf(%d,a);
+write(a);
+scanf(%f,b);
+write(b);
+scanf(%d,c(2));
+write(c(2));
+scanf(%f,d(1));
+write(d(1));
+end.

@@ -1,0 +1,12 @@
+var a;
+floating b;
+begin;
+    a:=1;
+    b:=2.2;
+    write(a);
+    write(b);
+    a := a+b;
+    write(a);
+    b := b-a;
+    write(b);
+end.

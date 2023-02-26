@@ -1,0 +1,10 @@
+var result;
+floating b;
+floatlist a(3);
+begin;
+b:=2.6;
+result := ceil(b);
+write(result);
+result := floor(b);
+write(result);
+end.

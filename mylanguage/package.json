@@ -1,0 +1,29 @@
+{
+    "name": "leson",
+    "displayName": "lesonPL0",
+    "description": "sucks",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pl/0-G-Version",
+            "aliases": ["lesonPL0", "pl/0-G-Version"],
+            "extensions": [".plg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pl/0-G-Version",
+            "scopeName": "source.plg",
+            "path": "./syntaxes/pl0-G-Version.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "pl/0-G-Version",
+            "path": "./snippets.json"
+        }]
+    }
+}

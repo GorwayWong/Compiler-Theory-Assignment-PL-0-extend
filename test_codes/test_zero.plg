@@ -1,0 +1,4 @@
+floatlist flo(3);
+begin;
+    read(flo(1));
+end.
